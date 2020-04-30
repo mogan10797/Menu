@@ -100,8 +100,11 @@ public class Mainframe extends JFrame {
         jpn1.add(jpn2, BorderLayout.CENTER);
         jpn1.add(jpn3, BorderLayout.SOUTH);
         cp.add(jsp, BorderLayout.CENTER);
+        jta.setEditable(false);
         jlb1.setFont(new Font(null, Font.BOLD, 22));
+        jlb1.setHorizontalAlignment(JLabel.CENTER);
         jlb2.setFont(new Font(null, Font.BOLD, 25));
+        jlb2.setHorizontalAlignment(JLabel.CENTER);
         jpn5.add(jlb2);
         jpn3.add(jlb1);
         jpn3.add(jbtn1);
@@ -110,7 +113,6 @@ public class Mainframe extends JFrame {
         jbtn1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 int val1 = 0, val2 = 0, val3 = 0, val4 = 0, val5 = 0, val6 = 0, val7 = 0, val8 = 0, tatol = 0;
-                ;
                 jta.append("Noodle Choice \n");
 
                 if (jcb1.isSelected()) {
