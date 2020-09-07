@@ -36,37 +36,37 @@ public class Mainframe2 extends JFrame {
     private JTextArea jta = new JTextArea();
     private JScrollPane jsp = new JScrollPane(jta);
 
-    private JCheckBox jcb1 = new JCheckBox("牛肉蛋花湯-100$");
+    private JCheckBox jcb1 = new JCheckBox("牛肉蛋花湯-$100");
     private JComboBox jcb11 = new JComboBox<Integer>();
     private JRadioButton jrb11 = new JRadioButton("加香菜");
     private JRadioButton jrb12 = new JRadioButton("不加香菜");
 
-    private JCheckBox jcb2 = new JCheckBox("牛肉湯-90$");
+    private JCheckBox jcb2 = new JCheckBox("牛肉湯-$90");
     private JComboBox jcb22 = new JComboBox<Integer>();
     private JRadioButton jrb21 = new JRadioButton("加香菜");
     private JRadioButton jrb22 = new JRadioButton("不加香菜");
 
-    private JCheckBox jcb3 = new JCheckBox("牛肉清湯加蛋花-35$");
+    private JCheckBox jcb3 = new JCheckBox("牛肉清湯加蛋花-$35");
     private JComboBox jcb33 = new JComboBox<Integer>();
     private JRadioButton jrb31 = new JRadioButton("加香菜");
     private JRadioButton jrb32 = new JRadioButton("不加香菜");
 
-    private JCheckBox jcb4 = new JCheckBox("餛飩湯-40$");
+    private JCheckBox jcb4 = new JCheckBox("餛飩湯-$40");
     private JComboBox jcb44 = new JComboBox<Integer>();
     private JRadioButton jrb41 = new JRadioButton("加香菜");
     private JRadioButton jrb42 = new JRadioButton("不加香菜");
 
-    private JCheckBox jcb5 = new JCheckBox("貢丸湯-35$");
+    private JCheckBox jcb5 = new JCheckBox("貢丸湯-$35");
     private JComboBox jcb55 = new JComboBox<Integer>();
     private JRadioButton jrb51 = new JRadioButton("加香菜");
     private JRadioButton jrb52 = new JRadioButton("不加香菜");
 
-    private JCheckBox jcb6 = new JCheckBox("蛋花湯-30$");
+    private JCheckBox jcb6 = new JCheckBox("蛋花湯-$30$");
     private JComboBox jcb66 = new JComboBox<Integer>();
     private JRadioButton jrb61 = new JRadioButton("加香菜");
     private JRadioButton jrb62 = new JRadioButton("不加香菜");
 
-    private JCheckBox jcb7 = new JCheckBox("青菜湯-25$");
+    private JCheckBox jcb7 = new JCheckBox("青菜湯-$25");
     private JComboBox jcb77 = new JComboBox<Integer>();
     private JRadioButton jrb71 = new JRadioButton("加香菜");
     private JRadioButton jrb72 = new JRadioButton("不加香菜");
@@ -106,84 +106,84 @@ jlb2.setFont(new Font(null,Font.BOLD,25));
                 jta.append("Soup Chioce \n");
 
                 if (jcb1.isSelected()) {
-                    jta.append("牛肉蛋花湯-100$ \n");
+                    jta.append("牛肉蛋花湯-$100 ");
                     if (jrb11.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("  加香菜 ");
                     } else if (jrb12.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("  不加香菜 ");
                     }
-                    jta.append(jcb11.getSelectedItem() + "碗 \n");
+                    jta.append(jcb11.getSelectedItem() + "碗 ");
                     val1 = 100 * Integer.parseInt(jcb11.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val1) + "元 \n");
                 }
                 if (jcb2.isSelected()) {
-                    jta.append("牛肉湯-90$ \n");
+                    jta.append("牛肉湯-$90 ");
                     if (jrb21.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("  加香菜 ");
                     } else if (jrb22.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("  不加香菜 ");
                     }
-                    jta.append(jcb22.getSelectedItem() + "碗 \n");
+                    jta.append(jcb22.getSelectedItem() + " 碗 ");
                     val2 = 90 * Integer.parseInt(jcb22.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val2) + "元 \n");
                 }
 
                 if (jcb3.isSelected()) {
-                    jta.append("牛肉清湯加蛋花-35$ \n");
+                    jta.append("牛肉清湯加蛋花-$35 ");
                     if (jrb31.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("加香菜 ");
                     } else if (jrb32.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("不加香菜 ");
                     }
-                    jta.append(jcb33.getSelectedItem() + "碗 \n");
+                    jta.append(jcb33.getSelectedItem() + "碗 ");
                     val3 = 35 * Integer.parseInt(jcb33.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val3) + "元 \n");
                 }
 
                 if (jcb4.isSelected()) {
-                    jta.append("餛飩湯-40$ \n");
+                    jta.append("餛飩湯-$40 ");
                     if (jrb41.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("加香菜 ");
                     } else if (jrb42.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("不加香菜 ");
                     }
-                    jta.append(jcb44.getSelectedItem() + "碗 \n");
+                    jta.append(jcb44.getSelectedItem() + "碗 ");
                     val4 = 40 * Integer.parseInt(jcb44.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val4) + "元 \n");
                 }
 
                 if (jcb5.isSelected()) {
-                    jta.append("貢丸湯-35$ \n");
+                    jta.append("貢丸湯-$35 ");
                     if (jrb51.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("加香菜 ");
                     } else if (jrb52.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("不加香菜 ");
                     }
-                    jta.append(jcb55.getSelectedItem() + "碗 \n");
+                    jta.append(jcb55.getSelectedItem() + "碗 ");
                     val5 = 35 * Integer.parseInt(jcb55.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val5) + "元 \n");
                 }
 
                 if (jcb6.isSelected()) {
-                    jta.append("蛋花湯-30$ \n");
+                    jta.append("蛋花湯-$30 ");
                     if (jrb61.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("加香菜 ");
                     } else if (jrb62.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("不加香菜 ");
                     }
-                    jta.append(jcb66.getSelectedItem() + "碗 \n");
+                    jta.append(jcb66.getSelectedItem() + "碗 ");
                     val6 = 30 * Integer.parseInt(jcb66.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val6) + "元 \n");
                 }
 
                 if (jcb7.isSelected()) {
-                    jta.append("蛋花湯-30$ \n");
+                    jta.append("蛋花湯-$25 ");
                     if (jrb71.isSelected()) {
-                        jta.append("加香菜 \n");
+                        jta.append("加香菜 ");
                     } else if (jrb72.isSelected()) {
-                        jta.append("不加香菜 \n");
+                        jta.append("不加香菜 ");
                     }
-                    jta.append(jcb77.getSelectedItem() + "碗 \n");
+                    jta.append(jcb77.getSelectedItem() + "碗 ");
                     val7 = 25 * Integer.parseInt(jcb77.getSelectedItem() + "");
                     jta.append("小計 : " + Integer.toString(val7) + "元 \n");
                 }
@@ -211,71 +211,99 @@ jlb2.setFont(new Font(null,Font.BOLD,25));
         jcb11.addItem("1");
         jcb11.addItem("2");
         jcb11.addItem("3");
+        jcb11.addItem("4");
+        jcb11.addItem("5");
+        jcb11.addItem("6");
         bg1.add(jrb11);
         bg1.add(jrb12);
         jpn2.add(jcb1);
         jpn2.add(jcb11);
         jpn2.add(jrb11);
         jpn2.add(jrb12);
+        jrb11.setSelected(true);
 
         jcb22.addItem("1");
         jcb22.addItem("2");
         jcb22.addItem("3");
+        jcb22.addItem("4");
+        jcb22.addItem("5");
+        jcb22.addItem("6");
         bg2.add(jrb21);
         bg2.add(jrb22);
         jpn2.add(jcb2);
         jpn2.add(jcb22);
         jpn2.add(jrb21);
         jpn2.add(jrb22);
+        jrb21.setSelected(true);
 
         jcb33.addItem("1");
         jcb33.addItem("2");
         jcb33.addItem("3");
+        jcb33.addItem("4");
+        jcb33.addItem("5");
+        jcb33.addItem("6");
         bg3.add(jrb31);
         bg3.add(jrb32);
         jpn2.add(jcb3);
         jpn2.add(jcb33);
         jpn2.add(jrb31);
         jpn2.add(jrb32);
+        jrb31.setSelected(true);
 
         jcb44.addItem("1");
         jcb44.addItem("2");
         jcb44.addItem("3");
+        jcb44.addItem("4");
+        jcb44.addItem("5");
+        jcb44.addItem("6");
         bg4.add(jrb41);
         bg4.add(jrb42);
         jpn2.add(jcb4);
         jpn2.add(jcb44);
         jpn2.add(jrb41);
         jpn2.add(jrb42);
+        jrb41.setSelected(true);
 
         jcb55.addItem("1");
         jcb55.addItem("2");
         jcb55.addItem("3");
+        jcb55.addItem("4");
+        jcb55.addItem("5");
+        jcb55.addItem("6");
         bg5.add(jrb51);
         bg5.add(jrb52);
         jpn2.add(jcb5);
         jpn2.add(jcb55);
         jpn2.add(jrb51);
         jpn2.add(jrb52);
+        jrb51.setSelected(true);
 
         jcb66.addItem("1");
         jcb66.addItem("2");
         jcb66.addItem("3");
+        jcb66.addItem("4");
+        jcb66.addItem("5");
+        jcb66.addItem("6");
         bg6.add(jrb61);
         bg6.add(jrb62);
         jpn2.add(jcb6);
         jpn2.add(jcb66);
         jpn2.add(jrb61);
         jpn2.add(jrb62);
+        jrb61.setSelected(true);
 
         jcb77.addItem("1");
         jcb77.addItem("2");
         jcb77.addItem("3");
+        jcb77.addItem("4");
+        jcb77.addItem("5");
+        jcb77.addItem("6");
         bg7.add(jrb71);
         bg7.add(jrb72);
         jpn2.add(jcb7);
         jpn2.add(jcb77);
         jpn2.add(jrb71);
         jpn2.add(jrb72);
+        jrb71.setSelected(true);
     }
 }
